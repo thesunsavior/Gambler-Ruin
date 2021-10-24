@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="relief">raised</property>
+    <property name="takefocus">true</property>
+    <property name="width">600</property>
+    <child>
+      <object class="ttk.Label" id="label1">
+        <property name="compound">top</property>
+        <property name="cursor">based_arrow_down</property>
+        <property name="style">Toolbutton</property>
+        <property name="text" translatable="yes">Initial fund:</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.1</property>
+          <property name="rely">0.10</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Scale" id="scale1">
+        <property name="from_">10</property>
+        <property name="orient">horizontal</property>
+        <property name="state">normal</property>
+        <property name="to">500</property>
+        <property name="value">10</property>
+        <property name="variable">int:fund</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.36</property>
+          <property name="rely">0.10</property>
+          <property name="width">300</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label2">
+        <property name="text" translatable="yes">Casino fund</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.1</property>
+          <property name="rely">0.3</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Scale" id="scale3">
+        <property name="from_">10</property>
+        <property name="orient">horizontal</property>
+        <property name="state">normal</property>
+        <property name="to">500</property>
+        <property name="value">10</property>
+        <property name="variable">int:casino_fund</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.36</property>
+          <property name="rely">0.3</property>
+          <property name="width">300</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label3">
+        <property name="text" translatable="yes">Bet</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.1</property>
+          <property name="rely">0.7</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry1">
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">center</property>
+        <property name="state">normal</property>
+        <property name="style">Toolbutton</property>
+        <property name="text" translatable="yes">1</property>
+        <property name="textvariable">int:bet</property>
+        <property name="width">5</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.36</property>
+          <property name="rely">0.7</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label4">
+        <property name="text" translatable="yes">Player wining probability</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.1</property>
+          <property name="rely">0.5</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Scale" id="scale6">
+        <property name="from_">1</property>
+        <property name="orient">horizontal</property>
+        <property name="state">normal</property>
+        <property name="to">100</property>
+        <property name="value">50</property>
+        <property name="variable">int:winning_prob</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.36</property>
+          <property name="rely">0.5</property>
+          <property name="width">300</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="button1">
+        <property name="command" type="command" cbtype="simple">Graph</property>
+        <property name="text" translatable="yes">Play!</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.48</property>
+          <property name="rely">0.8</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label5">
+        <property name="text" translatable="yes">Value</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.9</property>
+          <property name="rely">0.10</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label6">
+        <property name="text" translatable="yes">Value</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.9</property>
+          <property name="rely">0.30</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label7">
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">Value</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.9</property>
+          <property name="rely">0.50</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
